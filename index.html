@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>吳聿耘 | 個人電子名片</title>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cursor-orb" aria-hidden="true"></div>
+  <canvas id="sparkCanvas" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="回到首頁">
+      <span class="brand-mark">Y</span>
+      <span data-i18n="brand">吳聿耘</span>
+    </a>
+
+    <nav class="nav-links" aria-label="主要導覽">
+      <a href="#about" data-i18n="navAbout">關於我</a>
+      <a href="#story" data-i18n="navStory">音樂軌跡</a>
+      <a href="#contact" data-i18n="navContact">聯絡我</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="pill-button" id="langToggle" type="button" aria-label="Switch language">EN</button>
+      <button class="icon-button" id="themeToggle" type="button" aria-label="切換深淺色主題">
+        <span class="theme-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="heroEyebrow">粉彩系音樂電子名片</p>
+        <h1 data-i18n="heroName">吳聿耘</h1>
+        <p class="hero-lead" data-i18n="heroLead">用二胡與高胡，把日常裡柔軟的光，拉成可以被聽見的故事。</p>
+        <div class="hero-tags" aria-label="興趣與專長">
+          <span data-i18n="tagMusic">音樂創作</span>
+          <span data-i18n="tagErhu">二胡</span>
+          <span data-i18n="tagGaohu">高胡</span>
+          <span data-i18n="tagHealth">醫學人文</span>
+        </div>
+        <div class="hero-actions">
+          <a class="primary-button magnetic" href="#contact" data-i18n="ctaContact">聯絡我</a>
+          <a class="ghost-button magnetic" href="#story" data-i18n="ctaStory">看音樂軌跡</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="粉彩人物與樂器視覺">
+        <div class="portrait-card">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="avatar">
+            <div class="avatar-face"></div>
+            <div class="avatar-hair"></div>
+            <div class="avatar-body"></div>
+            <div class="instrument">
+              <span class="neck"></span>
+              <span class="box"></span>
+              <span class="bow"></span>
+            </div>
+          </div>
+          <div class="sound-wave wave-one"></div>
+          <div class="sound-wave wave-two"></div>
+          <div class="note note-one">♪</div>
+          <div class="note note-two">♬</div>
+          <div class="note note-three">♫</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee-strip" aria-label="個人特色">
+      <div class="marquee-track">
+        <span data-i18n="marqueeOne">Erhu performer</span>
+        <span>Pastel portfolio</span>
+        <span data-i18n="marqueeTwo">Music & medicine</span>
+        <span>Gaohu specialist</span>
+        <span data-i18n="marqueeThree">Soft but electric</span>
+        <span>Creative storyteller</span>
+        <span data-i18n="marqueeOne">Erhu performer</span>
+        <span>Pastel portfolio</span>
+        <span data-i18n="marqueeTwo">Music & medicine</span>
+        <span>Gaohu specialist</span>
+        <span data-i18n="marqueeThree">Soft but electric</span>
+        <span>Creative storyteller</span>
+      </div>
+    </section>
+
+    <section class="section about-grid" id="about">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="aboutEyebrow">About</p>
+        <h2 data-i18n="aboutTitle">關於我</h2>
+      </div>
+      <div class="glass-panel reveal">
+        <p data-i18n="aboutBody">
+          吳聿耘是一位喜歡把音樂、觀察與人文感受交織在一起的創作者。她擅長二胡與高胡，喜歡從傳統弦樂的細膩聲線中，找出像粉彩一樣溫柔但有層次的表達。
+        </p>
+        <div class="quick-facts">
+          <div>
+            <span data-i18n="factFocus">核心興趣</span>
+            <strong data-i18n="factFocusValue">音樂相關、民族弦樂、編曲靈感</strong>
+          </div>
+          <div>
+            <span data-i18n="factMood">個人風格</span>
+            <strong data-i18n="factMoodValue">柔和、細膩、帶一點舞台光感</strong>
+          </div>
+          <div>
+            <span data-i18n="factMotto">一句話</span>
+            <strong data-i18n="factMottoValue">讓每個音符都保留心跳的溫度。</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section timeline-section" id="story">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="timelineEyebrow">Journey</p>
+        <h2 data-i18n="timelineTitle">成長與音樂軌跡</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <p data-i18n="schoolOne">立人國小</p>
+          <h3 data-i18n="schoolOneTitle">第一次把舞台當成朋友</h3>
+          <span data-i18n="schoolOneBody">在校園活動裡接觸表演，開始對旋律、節奏與掌聲後的安靜著迷。</span>
+        </article>
+        <article class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <p data-i18n="schoolTwo">曉明女中</p>
+          <h3 data-i18n="schoolTwoTitle">練習把專注變成穩定</h3>
+          <span data-i18n="schoolTwoBody">國高中時期持續累積樂器技巧，也學會在課業與興趣之間安排自己的節奏。</span>
+        </article>
+        <article class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <p data-i18n="schoolThree">台北醫學大學</p>
+          <h3 data-i18n="schoolThreeTitle">讓醫學視角遇見音樂人文</h3>
+          <span data-i18n="schoolThreeBody">在專業學習之外，持續探索音樂如何陪伴情緒、記憶與生活中的細節。</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section feature-section">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="featureEyebrow">Highlights</p>
+        <h2 data-i18n="featureTitle">更多關於聿耘</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card reveal">
+          <span class="card-icon">01</span>
+          <h3 data-i18n="cardOneTitle">聲音色彩收藏家</h3>
+          <p data-i18n="cardOneBody">她會把城市裡的雨聲、咖啡店的杯盤聲、練琴房的泛音，都記成下一段旋律的素材。</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="card-icon">02</span>
+          <h3 data-i18n="cardTwoTitle">舞台前很安靜，音樂裡很閃亮</h3>
+          <p data-i18n="cardTwoBody">個性溫柔慢熱，表演時卻能用弓法與音色做出明亮的轉折。</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="card-icon">03</span>
+          <h3 data-i18n="cardThreeTitle">喜歡把傳統重新上色</h3>
+          <p data-i18n="cardThreeBody">擅長把二胡與高胡的古典音質，放進現代、清透、帶粉彩感的編曲想像。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-panel reveal">
+        <div>
+          <p class="eyebrow" data-i18n="contactEyebrow">Contact</p>
+          <h2 data-i18n="contactTitle">聯絡我</h2>
+          <p data-i18n="contactBody">歡迎邀約演出、合作企劃，或單純分享你最近喜歡的一首歌。</p>
+        </div>
+        <div class="contact-links">
+          <a class="contact-link magnetic" href="#" aria-label="Instagram">
+            <span>IG</span>
+            <strong>unhnh.fv</strong>
+          </a>
+          <a class="contact-link magnetic" href="#" aria-label="Facebook">
+            <span>FB</span>
+            <strong>吳小耘</strong>
+          </a>
+          <a class="contact-link magnetic" href="#" aria-label="YouTube">
+            <span>YT</span>
+            <strong>吳小耘</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span data-i18n="footer">© 2026 吳聿耘。以音樂與粉彩光影製作。</span>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
